@@ -5,13 +5,10 @@
 class square():
     """ class with squarwith two class attr """
 
-    width = 0
-    height = 0
-
-    def __init__(self, *args, **kwargs):
+    def __init__(self, width=0, height=0):
         """ init function docstring"""
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
